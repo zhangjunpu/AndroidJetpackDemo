@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">OralCalculation</string>
+    <string name="oral_calculation">Oral Calculation</string>
+    <string name="logo">logo</string>
+    <string name="start">Start</string>
+    <string name="high_score">High Score: %d</string>
+    <string name="current_score">Current Score: %d</string>
+    <string name="equal_sign" translatable="false">=</string>
+    <string name="question_mark" translatable="false">\?</string>
+    <string name="my_answer">My Answer</string>
+
+    <string name="number_0" translatable="false">0</string>
+    <string name="number_1" translatable="false">1</string>
+    <string name="number_2" translatable="false">2</string>
+    <string name="number_3" translatable="false">3</string>
+    <string name="number_4" translatable="false">4</string>
+    <string name="number_5" translatable="false">5</string>
+    <string name="number_6" translatable="false">6</string>
+    <string name="number_7" translatable="false">7</string>
+    <string name="number_8" translatable="false">8</string>
+    <string name="number_9" translatable="false">9</string>
+    <string name="clear" translatable="false">C</string>
+    <string name="ok" translatable="false">OK</string>
+
+    <string name="result_icon">result_icon</string>
+    <string name="your_score">Your Score: %d</string>
+    <string name="result_win">You Win! \nCongratulations on breaking the record!</string>
+    <string name="result_lose">You Lose! \nKeep Going!</string>
+    <string name="back">Back</string>
+    <string name="right">Right! Go on!</string>
+    <string name="alert_msg">Are you sure to quit？</string>
+    <string name="cancel">Cancel</string>
+    <string name="sure">Sure</string>
+    <string name="welcome">Welcome</string>
+    <string name="calculation">Calculation</string>
+    <string name="result">Result</string>
+</resources>

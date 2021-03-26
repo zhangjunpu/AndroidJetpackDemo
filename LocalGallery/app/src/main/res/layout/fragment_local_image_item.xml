@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="com.junpu.gallery.ui.local.utils.LocalHelper" />
+
+        <variable
+            name="file"
+            type="com.junpu.gallery.ui.local.bean.LocalFile" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp">
+
+        <ImageView
+            android:id="@+id/icon"
+            error="@{@drawable/ic_file_image}"
+            imageUrl="@{file.thumb ?? file.path}"
+            placeholder="@{@drawable/ic_file_image}"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:contentDescription="@string/icon"
+            android:scaleType="centerCrop"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/size"
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_gravity="bottom"
+            android:background="#80000000"
+            android:padding="2dp"
+            android:text="@{LocalHelper.lengthToString(file)}"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@id/icon"
+            app:layout_constraintEnd_toEndOf="@id/icon"
+            app:layout_constraintStart_toStartOf="@id/icon"
+            tools:text="1.8M" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

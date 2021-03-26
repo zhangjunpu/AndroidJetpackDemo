@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="com.junpu.gallery.ui.local.utils.LocalHelper" />
+
+        <variable
+            name="folder"
+            type="com.junpu.gallery.ui.local.bean.Folder" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_item_selector">
+
+        <ImageView
+            android:id="@+id/icon"
+            error="@{LocalHelper.isVideo(folder.type) ? @drawable/ic_folder_video : @drawable/ic_folder_audio}"
+            imageUrl="@{folder.path}"
+            placeholder="@{LocalHelper.isVideo(folder.type) ? @drawable/ic_folder_video : @drawable/ic_folder_audio}"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+            android:contentDescription="@string/icon"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:ellipsize="middle"
+            android:singleLine="true"
+            android:text="@{@string/format_folder_name(folder.name, folder.list.size())}"
+            android:textColor="@color/text_6"
+            app:layout_constraintBottom_toTopOf="@id/desc"
+            app:layout_constraintStart_toEndOf="@id/icon"
+            app:layout_constraintTop_toTopOf="@id/icon"
+            tools:text="name" />
+
+        <TextView
+            android:id="@+id/desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@{folder.path}"
+            android:textColor="@color/text_9"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@id/icon"
+            app:layout_constraintStart_toStartOf="@id/name"
+            app:layout_constraintTop_toBottomOf="@id/name"
+            tools:text="desc" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:background="@color/dialog_line"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/icon" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Wordbook</string>
+    <string name="clear">Clear</string>
+    <string name="add_new_word">Add New Word</string>
+    <string name="input_english">Enter English</string>
+    <string name="input_chinese">Enter Chinese</string>
+    <string name="english">English</string>
+    <string name="chinese">Chinese</string>
+    <string name="cancel">Cancel</string>
+    <string name="submit">Submit</string>
+    <string name="ok">OK</string>
+    <string name="generate_data">GenerateData</string>
+    <string name="clear_all_msg">This action will delete all the words, Do you want to continue?</string>
+    <string name="restore_delete_word">You deleted a word, Do you want to restore it?</string>
+    <string name="restore">Restore</string>
+    <string name="search">Search</string>
+</resources>

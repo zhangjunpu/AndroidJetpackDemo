@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">单词本</string>
+    <string name="clear">清空</string>
+    <string name="add_new_word">添加新单词</string>
+    <string name="input_english">请输入英文</string>
+    <string name="input_chinese">请输入中文</string>
+    <string name="english">英文</string>
+    <string name="chinese">中文</string>
+    <string name="cancel">取消</string>
+    <string name="submit">提交</string>
+    <string name="ok">确定</string>
+    <string name="generate_data">生成数据</string>
+    <string name="clear_all_msg">该操作将会删除所有单词，确定要执行吗？</string>
+    <string name="restore_delete_word">你删除了一个单词，是否要恢复它？</string>
+    <string name="restore">恢复</string>
+</resources>

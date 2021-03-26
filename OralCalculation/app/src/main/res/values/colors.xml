@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <color name="bg">#f2f3f4</color>
+    <color name="color_folder_icon">#666</color>
+    <color name="color_file_icon">#999</color>
+
+    <!-- 文字的颜色 -->
+    <color name="text_2">#222222</color>
+    <color name="text_3">#333333</color>
+    <color name="text_6">#666666</color>
+    <color name="text_8">#888888</color>
+    <color name="text_9">#999999</color>
+    <color name="text_a">#aaaaaa</color>
+    <color name="text_b">#bbbbbb</color>
+    <color name="text_c">#cccccc</color>
+    <color name="text_d">#dddddd</color>
+    <color name="text_e">#eeeeee</color>
+
+    <!-- 主题色 -->
+    <color name="accent_blue">#468DFF</color>
+    <color name="accent_yellow">#ffb461</color>
+    <color name="accent_orange">#f5a623</color>
+    <color name="accent_orange_red">#FF702D</color>
+    <color name="accent_red">#FF3B30</color>
+    <color name="accent_green">#7ED321</color>
+    <color name="accent_gray_light">#E8E8E8</color>
+    <color name="accent_pink">#FE7374</color>
+</resources>

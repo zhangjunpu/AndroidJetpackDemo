@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">PixabayGallery</string>
+    <string name="image">Image</string>
+    <string name="icon">icon</string>
+    <string name="image_index">%d / %d</string>
+    <string name="download">download</string>
+    <string name="avatar">avatar</string>
+    <string name="refresh">Refresh</string>
+</resources>
